@@ -15,7 +15,6 @@ import { AppComponent } from './app.component';
   bootstrap: [],
   entryComponents:[
     AppComponent
-
   ]
 })
 export class AppModule { 
@@ -24,7 +23,7 @@ export class AppModule {
   }
   ngDoBootstrap(){
     const appElement = createCustomElement(AppComponent, {injector: this.injector})
-    customElements.define('sidebar', appElement);
+    customElements.define('app-testingelement', appElement);
   }
 }
 
