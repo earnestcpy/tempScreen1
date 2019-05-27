@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run build:shell &&  npm run build:elements",
+    "build": "npm run build:elements && npm run build:shell",
     "build:elements": "ng build --prod --project testingElement --single-bundle true --output-hashing none --vendor-chunk false ",
     "build:shell": "ng build --prod --output-hashing none",
     "test": "ng test",
